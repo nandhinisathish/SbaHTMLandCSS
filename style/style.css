@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', monospace;
+
+    /* color: azure;
+    background-color: black; */
+}
+
+body {
+    background-image: url('/images/backGround1.jpeg');
+    background-size: cover;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(8, 8, 67), rgb(5, 1, 18), rgb(8, 8, 67));
+}
+
+#subContainer {
+    display: contents;
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    transform: translate(10%, 5%);
+    background-color: #230845;
+    box-shadow: 5px 5px 20px black;
+    color: #ffffff;
+    
+}
+
+#subContainer nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    height: 15%;
+    background-color: #38185e
+}
+
+nav h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+select,
+::picker(select){
+    appearance:base-select;
+}
+selectedoption{
+
+}
+
+.dropdown option{
+    display: block;
+}
+
+.dropdown{
+    display: none;
+     position: absolute;
+    z-index: 999;
+    width: 100%;
+
+}
+nav ul li a {
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+    background-color: #7d6977;
+    box-shadow: 0 0 15px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#subContainer .mainContent {
+    display: flex;
+    height: 85%;
+}
+
+.mainContent .leftSide {
+
+    width: 50%;
+    height: 100%;
+    padding: 40px 80px;
+}
+
+.leftSide h3 {
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.leftSide h1 {
+    font-weight: 600;
+    font-size: 56px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    line-height: 60px;
+
+}
+
+.leftSide h2 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.leftSide p {
+
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.leftSide button {
+    padding: 5px 10px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+    background-color: #0c4987;
+    color: white;
+    cursor: pointer;
+    transition: 0.5secs ease;
+    box-shadow: 0 0 10px 0;
+}
+
+.rightSide {
+    justify-content: center;
+    align-content: center;
+}
+
+.rightSide img {
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.backgroundBlurDesign {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #110125;
+    top: 48%;
+    left: 56%;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        ;
+    }
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#raffleTitle {
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ddd;
+    position: relative;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    gap: 10px 0;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    color: #fff;
+    margin-bottom: 20px 0;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0;
+}
+
+.submit-button {
+
+    display: flex;
+    color: #7d6977;
+    font-weight: 300;
+    margin: 80px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.submit-button:hover {
+    text-decoration: underline;
+    color: #fff;
+    background-color: #7d6977;
+    box-shadow: 0 0 15px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+
+    gap: 2rem;
+    color: #ddd;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding and border are included in the element's total width and height */
+    font-size: 16px;
+
+}
+
+/* Styling for placeholder text */
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Laptop Comparision page */
+.compareItem{
+    min-width:260px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    
+}
+
+/* Contact us table */
+/* The animation code */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+#contactusAnimation{
+    padding: 20px 20px;
+   
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse; /* Collapses borders between cells */
+    margin: 20px 0;
+    background-color: #350505;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dbaeae;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #162a16;
+    color: rgb(183, 133, 133);
+}
+
+tr:nth-child(even) {
+    background-color: #380909; /* Zebra striping for readability */
+}
+
+tr:hover {
+    background-color: #d67979; /* Highlight row on hover */
+}
