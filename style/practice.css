@@ -1,16 +1,36 @@
-body {
+.dropdown {
+    min-width: 200px;
+
+}
+
+.dropdownMenu select {
+    background-color: blueviolet;
+    color: #f2f2f2;
+    border: 0;
+    padding: 12px 35px 12px 12px;
+    border-radius: 3px;
+    position: relative;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+
+/* body {
     background-color: aqua;
     
 }
 
-.dropdown {
+.dropdown  button{
     position: relative;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .dropdown .dropdown-toggle {
@@ -65,7 +85,7 @@ body {
     overflow: auto;
     /* visibility: hidden; */
 
-}
+
 
 .dropdown .dropdown-menu[aria-expanded="true"] {
     visibility: visible;
@@ -86,4 +106,6 @@ body {
 .dropdown .dropdown-menu focus {
     outline: none;
     background: #f2f2f2;
+    position: absolute;
 }
+

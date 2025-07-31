@@ -1,4 +1,9 @@
+/* 
+General styling for all elements
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
+
 body,
 html {
     margin: 0;
@@ -23,6 +28,10 @@ body {
     box-sizing: border-box;
 }
 
+/* 
+* Navigation bar styling 
+*/
+
 #container {
     height: 100vh;
     background: linear-gradient(90deg, rgb(8, 8, 67), rgb(5, 1, 18), rgb(8, 8, 67));
@@ -38,7 +47,7 @@ body {
     background-color: #230845;
     box-shadow: 5px 5px 20px black;
     color: #ffffff;
-    
+
 }
 
 #subContainer nav {
@@ -72,24 +81,10 @@ nav ul li {
 }
 
 select,
-::picker(select){
-    appearance:base-select;
-}
-selectedoption{
-
+::picker(select) {
+    appearance: base-select;
 }
 
-.dropdown option{
-    display: block;
-}
-
-.dropdown{
-    display: none;
-     position: absolute;
-    z-index: 999;
-    width: 100%;
-
-}
 nav ul li a {
     padding: 5px 20px;
     font-weight: 500;
@@ -111,6 +106,10 @@ nav ul li a:hover {
     display: flex;
     height: 85%;
 }
+
+/* 
+* Home Page left side content styling  
+*/
 
 .mainContent .leftSide {
 
@@ -147,7 +146,7 @@ nav ul li a:hover {
 
 }
 
-.leftSide button {
+.leftSide button{
     padding: 5px 10px;
     letter-spacing: 0.5px;
     border-radius: 5px;
@@ -159,6 +158,13 @@ nav ul li a:hover {
     transition: 0.5secs ease;
     box-shadow: 0 0 10px 0;
 }
+
+.leftSide button a{
+    color: #fff;
+}
+/* 
+* Home page right side styling 
+*/
 
 .rightSide {
     justify-content: center;
@@ -192,6 +198,10 @@ nav ul li a:hover {
         ;
     }
 }
+
+/* 
+* Raffle page styling
+*/
 
 #formContainer {
     display: flex;
@@ -263,48 +273,93 @@ input[type="tel"] {
 
 }
 
-/* Styling for placeholder text */
+/* 
+* Laptop page styling
+*/
+/* 
+* DropDown Menu in the navigation bar
+*/
+
+.dropdown {
+    min-width: 200px;
+
+}
+
+.dropdownMenu select {
+    background-color: rgb(68, 12, 120);
+    color: #f2f2f2;
+    border: 0;
+    padding: 12px 35px 12px 12px;
+    border-radius: 3px;
+    position: relative;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0;
+}
+
+/* Laptop page - Styling for placeholder text */
+
 input::placeholder {
     color: #aaa;
     font-style: italic;
 }
 
-/* Laptop Comparision page */
-.compareItem{
-    min-width:260px;
+.compareItem {
+    min-width: 260px;
     height: 40px;
     font-size: 16px;
     padding: 10px;
-    
+
 }
 
-/* Contact us table */
+.laptopComparisionContainer~input {
+    width: 200px;
+    padding: 10px 0;
+    ;
+    margin-top: 20px;
+    background-color: rgb(68, 12, 120);
+    color: #fff;
+    box-shadow: 0 0 10px 0;
+}
+
+/* 
+* Contact us page styling for table
+*/
+
 /* The animation code */
 @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
 }
-#contactusAnimation{
+
+#contactusAnimation {
     padding: 20px 20px;
-   
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
 
 }
-
 
 table {
     width: 80%;
-    border-collapse: collapse; /* Collapses borders between cells */
+    border-collapse: collapse;
+    /* Collapses borders between cells */
     margin: 20px 0;
     background-color: #350505;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
     border: 1px solid #dbaeae;
     padding: 10px;
     text-align: left;
@@ -316,9 +371,11 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #380909; /* Zebra striping for readability */
+    background-color: #380909;
+    /* Zebra striping for readability */
 }
 
 tr:hover {
-    background-color: #d67979; /* Highlight row on hover */
+    background-color: #d67979;
+    /* Highlight row on hover */
 }
